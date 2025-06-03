@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  flutter:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: flutter_dev
+    working_dir: /app
+    volumes:
+      - .:/app
+    environment:
+      - DISPLAY=${DISPLAY}
+    network_mode: host
+    stdin_open: true
+    tty: true

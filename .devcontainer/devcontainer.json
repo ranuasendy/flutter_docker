@@ -1,0 +1,15 @@
+{
+    "name": "Flutter Dev Container",
+    "dockerComposeFile": "docker/docker-compose.yml",
+    "service": "flutter",
+    "workspaceFolder": "/app",
+    "settings": {
+      "terminal.integrated.shell.linux": "/bin/bash"
+    },
+    "extensions": [
+      "Dart-Code.flutter",
+      "ms-vscode.cpptools"
+    ],
+    "postCreateCommand": "flutter doctor"
+  }
+  
